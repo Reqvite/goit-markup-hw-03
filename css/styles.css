@@ -17,9 +17,20 @@ body {
     font-size: 14px;
 }
 
+h1,h2,h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 /* all lists*/
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /*all links*/
@@ -28,7 +39,14 @@ body {
 }
 
 /*----Header----*/
-
+.container{
+    outline: 2px solid tomato;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
  /*logo*/
 
 .logo {
@@ -110,7 +128,13 @@ body {
     /*buttons*/
 
 .button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    border: 1px solid transparent;
     font-family: inherit;
+    text-align: center;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     cursor: pointer;
@@ -152,25 +176,48 @@ body {
    
  /* -----------------------Index*-----------------------*/
 
-    /*hero*/
+    /*Section hero*/
 
-.hero{
+.hero-section{
     background-color: var(--secondary-bg-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title{
-   color: var(--primary-white-color);
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
 }
 
-    /*main*/
+        /*Section features*/
+.section-features{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+.features-title {
+    margin-bottom: 10px;
+     font-weight: 700;
+     line-height: 1.14;
+     text-transform: uppercase;
+     letter-spacing: 0.03em;
+        }
+    
+.features-text {
+      color: var(--secondary-text-color);
+    font-weight: 400;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+        }
+    /*Main*/
 .section-title{
+    margin-bottom: 50px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
@@ -178,30 +225,26 @@ body {
         letter-spacing: 0.03em;
 }
 
-    /*features*/
-.features-title{
-        font-weight: 700;
-        line-height: 1.14;
-        text-transform: uppercase;
-        letter-spacing: 0.03em;
+    /*Section occupation*/
+.section-occupation{
+    padding-bottom: 94px;
 }
-.features-text{
-    color: var(--secondary-text-color);
-        font-weight: 400;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-}
-
-    /*occupation*/
-
-    /*team*/
+    /*Section team*/
 .team-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--button-bg-color);;
 }
 .team li {
     background-color: var(--primary-white-color);
 }
+
+.team-image{
+    margin-bottom: 30px;
+}
+
 .team-members{
+    margin-bottom: 10px;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
@@ -210,6 +253,7 @@ body {
 }
 
 .team-position{
+    padding-bottom: 30px;
     color: var(--secondary-text-color);
         font-size: 16px;
         line-height: 1.18;
