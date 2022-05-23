@@ -26,6 +26,33 @@ p{
     margin-top: 0;
     margin-bottom: 0;
 }
+
+li{
+    /*outline: 2px solid tomato;*/
+}
+
+.container {
+    outline: 2px solid tomato;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 /* all lists*/
 .list {
     list-style: none;
@@ -39,14 +66,12 @@ p{
 }
 
 /*----Header----*/
-.container{
-    outline: 2px solid tomato;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+
+.header{
+    display: flex;
+    align-items: center; /*fix*/
 }
+
  /*logo*/
 
 .logo {
@@ -67,8 +92,19 @@ p{
 }
 
 
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+    
+}
 
+.site-nav .item + .item{
+    margin-left: 50px;
+}
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-text-color);
      font-weight: 500;
      line-height: 1.14;
@@ -85,8 +121,19 @@ p{
 .site-nav .link.current {
      color: var(--accent-color);
 }
-    
+
+.contacts{
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item + .item{
+    margin-left: 50px;
+}
 .contacts .link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
       color: var(--secondary-text-color);
       text-decoration: none;
       font-weight: 500;
@@ -178,7 +225,7 @@ p{
 
     /*Section hero*/
 
-.hero-section{
+.hero{
     background-color: var(--secondary-bg-color);
     text-align: center;
     padding-top: 200px;
@@ -186,6 +233,7 @@ p{
 }
 
 .hero-title{
+    margin-bottom: 30px;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -196,10 +244,12 @@ p{
 }
 
         /*Section features*/
-.section-features{
-    padding-top: 94px;
-    padding-bottom: 94px;
-    
+.features{
+    display: flex;
+}
+
+.features .item + .item{
+    margin-left: 30px;/*fix text*/
 }
 .features-title {
     margin-bottom: 10px;
@@ -216,26 +266,25 @@ p{
       letter-spacing: 0.03em;
         }
     /*Main*/
-.section-title{
-    margin-bottom: 50px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        text-align: center;
-        letter-spacing: 0.03em;
-}
 
     /*Section occupation*/
-.section-occupation{
-    padding-bottom: 94px;
+.occupation{
+    display: flex;
+}
+
+.occupation .item + .item{
+    margin-left: 30px ;
 }
     /*Section team*/
-.team-section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+.team{
+    display: flex;
     background-color: var(--button-bg-color);;
 }
-.team li {
+
+.team .item + .item{
+    margin-left: 30px;
+}
+.team .item {
     background-color: var(--primary-white-color);
 }
 
