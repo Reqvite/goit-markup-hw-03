@@ -362,7 +362,7 @@ img{
 }
 
 .portfolio .item {
-    width: 370px;
+    flex-basis: calc((100% - 9 * 15px) / 9);
     margin: 15px;
 }
 
