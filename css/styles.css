@@ -71,15 +71,13 @@ img{
 }
 .header{
     display: flex;
-        align-items: center;
-
+    text-align: center;
 }
 
  /*logo*/
 .navbar{
     display: flex;
-    align-items: center;
-
+    text-align: center;
 }
 .logo {
     padding-top: 23px;
