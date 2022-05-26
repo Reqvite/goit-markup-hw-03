@@ -80,8 +80,8 @@ img{
     text-align: center;
 }
 .logo {
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
