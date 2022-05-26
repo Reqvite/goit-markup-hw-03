@@ -71,17 +71,19 @@ img{
 }
 .header{
     display: flex;
-    
+        align-items: center;
+
 }
 
  /*logo*/
 .navbar{
     display: flex;
     align-items: center;
+
 }
 .logo {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 23px;
+    padding-bottom: 23px;
 
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
@@ -134,6 +136,7 @@ img{
 .contacts{
     display: flex;
     margin-left: auto;
+
 }
 
 .contacts .item + .item{
