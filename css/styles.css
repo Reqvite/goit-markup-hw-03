@@ -4,7 +4,7 @@
 --accent-color: #2196F3;
 --primary-white-color: #FFFFFF;
 --button-bg-color: #F5F4FA;
---primary-button-hover: #188CEF;
+--color-hover: #188CEF;
 --secondary-bg-color: #2F303A;
 --footer-address-color: rgba(255, 255, 255, 0.6);
 --border-color: #EEEEEE;
@@ -80,6 +80,9 @@ img{
     align-items: center;
 }
 .logo {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -121,7 +124,7 @@ img{
 .site-nav .link:focus,
 .contacts .link:hover,
 .contacts .link:focus {
-     color: var(--accent-color);
+     color: var(--color-hover);
 }
     
 .site-nav .link.current {
@@ -186,7 +189,7 @@ img{
  .address-mail:hover,
  .address-tel:focus,
  .address-tel:hover{
-     color: var(--accent-color);
+     color: var(--color-hover);
  }
 
     /*buttons*/
@@ -224,6 +227,11 @@ img{
     letter-spacing: 0.03em;
 }
 
+.button.main-secondary{
+    color: var(--primary-white-color);
+    background-color: var(--color-hover);
+}
+    
 .filter .item + .item{
     margin-left: 8px;
 }
@@ -235,7 +243,7 @@ img{
 .button.secondary:focus,
 .button.secondary:hover{
     color: var(--primary-white-color);
-    background-color: var(--accent-color);
+    background-color: var(--color-hover);
  
 }
    
@@ -370,8 +378,9 @@ img{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+    padding-right: 24px;
     border: 1px solid var(--border-color);
-    border-top-style: none;
+    border-top: 0;
 }
 .portfolio-title{
     margin-bottom: 4px;
